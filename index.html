@@ -7,7 +7,7 @@
 	<meta name="description" content="Portfolio de Nina Carducci, photographe professionnelle, Bordeaux.">
 	<meta name="keywords" content="photographie, portfolio">
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -17,7 +17,7 @@
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/maugallery.min.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
 </head>
 
@@ -36,7 +36,7 @@
 		</nav>
 	</header>
 	<main>
-		<div id="header">
+		<section id="header">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -71,16 +71,16 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-		</div>
-		<div id="about">
+		</section>
+		<section id="about">
 			<div class="picture left">
 				<img src="./assets/images/nina-gimp.webp" alt="Nina-carducci">
 			</div>
 			<div id="about-me">
-				<h3 class="about-me__title">A propos de moi</h3>
-				<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
+				<h2 class="about-me__title">A propos de moi</h2>
+				<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
 					prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
-					immortels, voilà ce qui me fait vibrer.</h6>
+					immortels, voilà ce qui me fait vibrer.</h3>
 				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie :
 					le
 					figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos
@@ -92,8 +92,8 @@
 					la
 					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
-		</div>
-		<div id="gallery">
+		</secction>
+		<section id="gallery">
 			<h3 class="title">Portfolio</h3>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
@@ -138,8 +138,8 @@
 					<figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
 			</div>
-		</div>
-		<div id="services">
+		</section>
+		<section id="services">
 			<h3 class="title">Mes services</h3>
 			<div class="container">
 				<div class="service">
@@ -179,7 +179,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div class="quote">
 			<figure>
 				<blockquote>
@@ -191,17 +191,17 @@
 		</div>
 	</main>
 	<footer>
-		<div id="contact">
+		<section id="contact">
 			<div class="container">
 				<div class="form-container">
 					<h3>Une question ? Une demande de devis ?</h3>
 					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 					<form action="#" method="post">
-						<label>Nom</label>
+						<label for ="nom">Nom</label>
 						<input type="text" name="nom" id="nom">
-						<label>Email</label>
+						<label for="email">Email</label>
 						<input type="email" name="email" id="email">
-						<label>Message</label>
+						<label for="message">Message</label>
 						<textarea name="message" id="message" cols="30" rows="10"></textarea>
 						<input type="submit" value="Envoyer" />
 					</form>
@@ -210,7 +210,7 @@
 					<img src="./assets/images/camera-gimp.webp" alt="camera_img">
 				</div>
 			</div>
-		</div>
+		</section>
 	</footer>
 </body>
 
